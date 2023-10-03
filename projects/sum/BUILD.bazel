@@ -1,0 +1,13 @@
+py_library(
+    name = "sum",
+    srcs = ["sum.py"],
+    visibility = ["//visibility:public"]
+)
+
+py_test(
+    name = "sum_test",
+    srcs = ["sum_test.py"],
+    deps = [
+        "//projects/sum:sum"
+    ],
+)
