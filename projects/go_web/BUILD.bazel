@@ -1,0 +1,18 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_binary")
+
+go_library(
+    name = "go_web_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/mahfuzsust/bazel/projects/go_web",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//projects/go_calculator",
+        "@com_github_gorilla_mux//:mux",
+    ],
+)
+
+go_binary(
+    name = "go_web",
+    embed = [":go_web_lib"],
+    visibility = ["//visibility:public"],
+)
