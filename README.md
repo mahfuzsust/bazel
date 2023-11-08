@@ -34,17 +34,14 @@ bazel build //projects/java-prime/src/main/java/info/mahfuz:mahfuz_deploy.jar
 java -jar bazel-bin/projects/java-prime/src/main/java/info/mahfuz/mahfuz_deploy.jar
 ```
 
-
-
-Build project
-```
-bazel build //...
-```
+## Go
 
 Run project
 ```
 bazel run //projects/go_web
 ```
+
+### Clean
 
 Clean bazel 
 ```
