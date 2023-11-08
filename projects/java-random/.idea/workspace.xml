@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1157654e-afaf-4afc-bc51-81fe89a4f6aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../WORKSPACE.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../../WORKSPACE.bazel" afterDir="false" />
-    </list>
+    <list default="true" id="1157654e-afaf-4afc-bc51-81fe89a4f6aa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699421697252</updated>
       <workItem from="1699421698671" duration="1372000" />
-      <workItem from="1699434438920" duration="252000" />
+      <workItem from="1699434438920" duration="414000" />
     </task>
     <servers />
   </component>
