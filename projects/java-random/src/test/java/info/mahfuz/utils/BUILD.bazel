@@ -1,18 +1,27 @@
-java_library(
-    name = "utils",
+java_test(
+    name = "RandomTest",
     srcs = glob(["*.java"]),
+    size = "small",
     deps = [
         "@maven//:junit_junit",
         "//projects/java-random/src/main/java/info/mahfuz/utils",
     ],
+    runtime_deps = [
+        "//projects/java-random/src/main/java/info/mahfuz/utils",
+        "@maven//:junit_junit", 
+    ],
 )
 
-
 java_test(
-    name = "RandomTest",
+    name = "ABCTest",
+    srcs = glob(["*.java"]),
     size = "small",
+    deps = [
+        "@maven//:junit_junit",
+        "//projects/java-random/src/main/java/info/mahfuz/utils",
+    ],
     runtime_deps = [
-        ":utils",
+        "//projects/java-random/src/main/java/info/mahfuz/utils",
         "@maven//:junit_junit", 
     ],
 )

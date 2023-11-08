@@ -1,0 +1,17 @@
+java_library(
+    name = "services",
+    srcs = glob(["*.java"]),
+    deps = [
+        "@maven//:junit_junit",
+        "//projects/java-prime/src/main/java/info/mahfuz/services",
+    ],
+)
+
+java_test(
+    name = "PrimeTest",
+    size = "small",
+    runtime_deps = [
+        "@maven//:junit_junit", 
+        ":services",
+    ],
+)
