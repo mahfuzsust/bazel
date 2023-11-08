@@ -1,0 +1,8 @@
+java_binary(
+    name = "mahfuz",
+    srcs = glob(["*.java"]),
+    main_class = "info.mahfuz.Main",
+    deps = [
+        "//projects/java-random/src/main/java/info/mahfuz/utils",
+    ],
+)

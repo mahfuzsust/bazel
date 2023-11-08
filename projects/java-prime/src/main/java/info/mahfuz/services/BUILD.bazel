@@ -1,0 +1,5 @@
+java_library(
+    name = "services",
+    srcs = glob(["*.java"]),
+    visibility = ["//visibility:public"],
+)
