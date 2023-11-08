@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1157654e-afaf-4afc-bc51-81fe89a4f6aa" name="Changes" comment="" />
+    <list default="true" id="1157654e-afaf-4afc-bc51-81fe89a4f6aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../java-prime/src/main/java/info/mahfuz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-prime/src/main/java/info/mahfuz/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -34,10 +37,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/mahfuz/Desktop/bazel/projects/java-random/pom.xml"
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "last_opened_file_path": "/Users/mahfuz/Desktop/bazel/projects/java-random/src/test/java/info/mahfuz/utils"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/info/mahfuz/utils" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="info.mahfuz.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RandomTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="info.mahfuz.Main" />
       <module name="java-random" />
@@ -51,8 +67,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RandomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-random" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="info.mahfuz.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="info.mahfuz.utils" />
+      <option name="MAIN_CLASS_NAME" value="info.mahfuz.utils.RandomTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomTest.generate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-random" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="info.mahfuz.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="info.mahfuz.utils" />
+      <option name="MAIN_CLASS_NAME" value="info.mahfuz.utils.RandomTest" />
+      <option name="METHOD_NAME" value="generate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RandomTest" />
+        <item itemvalue="JUnit.RandomTest.generate" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -67,6 +116,7 @@
       <updated>1699421697252</updated>
       <workItem from="1699421698671" duration="1372000" />
       <workItem from="1699434438920" duration="414000" />
+      <workItem from="1699439356510" duration="2134000" />
     </task>
     <servers />
   </component>

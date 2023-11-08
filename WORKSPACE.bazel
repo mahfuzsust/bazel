@@ -85,7 +85,7 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
-        "junit:junit:4.12",
+        "junit:junit:4.13.2",
         "org.apache.logging.log4j:log4j-api:2.21.1",
         "org.apache.logging.log4j:log4j-core:2.21.1",
     ],
