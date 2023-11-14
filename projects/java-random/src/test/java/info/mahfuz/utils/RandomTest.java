@@ -11,5 +11,6 @@ public class RandomTest {
         assertTrue(Random.generate(100) <= 100);
         assertTrue(Random.generate(1) <= 1);
         assertTrue(Random.generate(10) <= 10);
+        assertTrue(Random.generate(15) <= 15);
     }
 }

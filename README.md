@@ -18,6 +18,11 @@ bazel build //projects/java-prime/src/main/java/info/mahfuz
 bazel build //projects/java-random/src/main/java/info/mahfuz
 ```
 
+### Dependency
+```
+bazel query  --notool_deps --noimplicit_deps "deps(//projects/java-prime/src/main/java/info/mahfuz)" --output graph
+```
+
 ### Run
 
 ```

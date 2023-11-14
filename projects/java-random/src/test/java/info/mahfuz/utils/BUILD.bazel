@@ -11,17 +11,3 @@ java_test(
         "@maven//:junit_junit", 
     ],
 )
-
-java_test(
-    name = "ABCTest",
-    srcs = glob(["*.java"]),
-    size = "small",
-    deps = [
-        "@maven//:junit_junit",
-        "//projects/java-random/src/main/java/info/mahfuz/utils",
-    ],
-    runtime_deps = [
-        "//projects/java-random/src/main/java/info/mahfuz/utils",
-        "@maven//:junit_junit", 
-    ],
-)

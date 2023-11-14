@@ -12,7 +12,7 @@ import (
 	"github.com/mahfuzsust/bazel/projects/go_calculator"
 )
 
-func YourHandler(w http.ResponseWriter, r *http.Request) {
+func RestHandler(w http.ResponseWriter, r *http.Request) {
 	log.Println("Received request")
 	a := rand.Intn(100)
 	b := rand.Intn(100)
@@ -31,7 +31,7 @@ func getPort() string {
 
 func main() {
 	r := mux.NewRouter()
-	r.HandleFunc("/", YourHandler)
+	r.HandleFunc("/", RestHandler)
 	port := getPort()
 	log.Println("running program's operating system target: " + runtime.GOOS)
 	log.Println("running program's architecture target: " + runtime.GOARCH)

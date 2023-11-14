@@ -6,3 +6,21 @@ java_binary(
         "//projects/java-random/src/main/java/info/mahfuz/utils",
     ],
 )
+
+
+
+# tar(
+#     name = "layer",
+#     srcs = ["mahfuz_deploy.jar"],
+# )
+
+# oci_image(
+#     name = "image",
+#     base = "@distroless_java",
+#     entrypoint = [
+#         "java",
+#         "-jar",
+#         "/java-maven-deploy.jar",
+#     ],
+#     tars = [":layer"],
+# )
