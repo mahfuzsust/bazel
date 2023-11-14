@@ -17,7 +17,7 @@ load("@rules_python//python:pip.bzl", "pip_install")
 
 pip_install(
     name = "pip",
-    requirements = "//dependencies:requirements.txt",
+    requirements = "//projects/py_calculator:requirements.txt",
 )
 
 http_archive(
