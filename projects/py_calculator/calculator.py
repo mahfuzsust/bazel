@@ -1,4 +1,4 @@
-from projects.sum.sum import Sum
+from projects.py_sum.sum import Sum
 
 sum = Sum()
 

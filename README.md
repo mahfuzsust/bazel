@@ -46,6 +46,13 @@ Run project
 bazel run //projects/go_web
 ```
 
+## Python
+
+Run project
+```
+bazel run //projects/py_calculator:calculator_web
+```
+
 ### Clean
 
 Clean bazel 

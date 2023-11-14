@@ -8,6 +8,6 @@ py_test(
     name = "sum_test",
     srcs = ["sum_test.py"],
     deps = [
-        "//projects/sum:sum"
+        "//projects/py_sum:sum"
     ],
 )

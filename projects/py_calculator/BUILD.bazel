@@ -7,7 +7,7 @@ py_library(
     visibility = ["//projects/python_web:__pkg__"],
     deps = [
         requirement("Flask"),
-        "//projects/sum:sum",
+        "//projects/py_sum:sum",
     ],
     data = ["requirements.txt"],
 )
