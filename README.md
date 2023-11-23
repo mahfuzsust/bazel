@@ -59,3 +59,14 @@ Clean bazel
 ```
 bazel clean
 ```
+
+## Remote caching
+
+Run the docker image
+```
+docker run -u 1000:1000 -v ~/Desktop/remote-cache:/data -p 9090:8080 -p 9092:9092 buchgr/bazel-remote-cache --max_size 5
+```
+
+And then run the build and test using `--remote_cache`. There are two endpoint available to the image
+1. 9090 for http (`--remote_cache=http://localhost:9090`)
+2. 9092 for grpc (`--remote_cache=grpc://localhost:9092`)
