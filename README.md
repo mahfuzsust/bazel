@@ -70,3 +70,35 @@ docker run -u 1000:1000 -v ~/Desktop/remote-cache:/data -p 9090:8080 -p 9092:909
 And then run the build and test using `--remote_cache`. There are two endpoint available to the image
 1. 9090 for http (`--remote_cache=http://localhost:9090`)
 2. 9092 for grpc (`--remote_cache=grpc://localhost:9092`)
+
+```
+bazel test //... --remote_cache=grpc://localhost:9092
+bazel test //... --remote_cache=http://localhost:9090
+```
+
+## Code coverage
+
+```
+bazel coverage --combined_report=lcov //...
+
+genhtml --branch-coverage --output bazel-coverage "$(bazel info output_path)/_coverage/_coverage_report.dat"
+```
+
+## Tracing
+### Memory profiling
+
+```
+bazel --host_jvm_args=-javaagent:/Users/mahfuz/Desktop/java-allocation-instrumenter-3.3.0.jar --host_jvm_args=-DRULE_MEMORY_TRACKER=1 build --nobuild //...
+
+bazel --host_jvm_args=-javaagent:/Users/mahfuz/Desktop/java-allocation-instrumenter-3.3.0.jar --host_jvm_args=-DRULE_MEMORY_TRACKER=1 info used-heap-size-after-gc
+```
+
+
+### Profile tracing 
+```
+bazel build --profile=profiler.gz //...
+
+bazel analyze-profile profiler.gz
+
+chrome://tracing
+```
